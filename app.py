@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import sklearn
 from sklearn.linear_model import LinearRegression
 
 # Load data
@@ -30,3 +29,4 @@ if st.button("Predict Price"):
     price = np.expm1(pred)[0]
 
     st.success(f"Predicted Price: ${price:,.2f}")
+
