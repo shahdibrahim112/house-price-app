@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import linearRegression
 
 # Load data
 df = pd.read_csv("train.csv")
@@ -29,4 +29,5 @@ if st.button("Predict Price"):
     price = np.expm1(pred)[0]
 
     st.success(f"Predicted Price: ${price:,.2f}")
+
 
